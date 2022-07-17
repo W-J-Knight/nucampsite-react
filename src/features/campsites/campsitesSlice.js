@@ -2,7 +2,7 @@ import { CAMPSITES } from "../../app/shared/CAMPSITES";
 
 
 export const selectAllCampsites = () => {
-    // return an array of campsite
+    // return an array of campsites
     return CAMPSITES;
 }
 
