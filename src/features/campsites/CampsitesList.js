@@ -3,7 +3,7 @@ import CampsiteCard from "./CampsiteCard";
 import { selectAllCampsites } from './campsitesSlice';
 
 const CampsitesList = () =>{
-    const campsites = selectAllCampsites()
+    const campsites = selectAllCampsites();
 
     return (
         <Row className='ms-auto'>
