@@ -45,8 +45,8 @@ const AboutPage = () => {
             </Col>
             <Col>
                 <Card  className='bg-light mt-3'>
-                    <CardBody  className='blockquote'>
-                        <blockquote>
+                    <CardBody >
+                        <blockquote className="blockquote">
                             <p>
                                     I will not follow where the path may lead, but I
                                     will go where there is no path, and I will leave

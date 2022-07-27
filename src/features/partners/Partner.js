@@ -1,4 +1,4 @@
-const Partners = ({partner}) => {
+const Partner = ({partner}) => {
     if (partner) {
         const { image, name, description } = partner
         return (
@@ -14,4 +14,4 @@ const Partners = ({partner}) => {
 return null;
 }
 
-export default Partners
+export default Partner

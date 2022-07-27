@@ -1,5 +1,5 @@
 import { Col } from "reactstrap";
-import Partners from "./Partners";
+import Partner from "./Partner";
 import { selectAllPartners } from "./partnersSlice";
 
 const PartnersList = () => {
@@ -8,7 +8,7 @@ const PartnersList = () => {
         <Col  className='mt-4' >
             {partners.map((partner) => {
                 return(<div className='d-flex mb-5' key={partner.id}>
-                    <Partners partner={partner}/>
+                    <Partner partner={partner}/>
                 </div>)
             })
 
