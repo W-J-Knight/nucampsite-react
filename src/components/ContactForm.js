@@ -23,7 +23,7 @@ const ContactForm = () => {
     onSubmit={handleSubmit}
     validate={validateContactForm}
     >
-                    <Form>
+            <Form>
                 <FormGroup row>
                     <Label htmlFor='firstName' md='2'>
                         First Name
