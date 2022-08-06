@@ -5,12 +5,12 @@ const initialState = {
     promotionsArray: PROMOTIONS,
 };
 
-const promotionSlice = createSlice({
+const promotionsSlice = createSlice({
     name: "promotions",
     initialState,
 });
 
-export const promotionsReducer = promotionSlice.reducer;
+export const promotionsReducer = promotionsSlice.reducer;
 
 export const selectFeaturedPromotion = (state) => {
     return state.promotions.promotionsArray.find(
