@@ -4,7 +4,7 @@ import { baseUrl } from "../../app/shared/baseUrl ";
 import { mapImageURL } from "../../utils/mapImageURL";
 
 export const fetchPromotions = createAsyncThunk(
-    "promotions/fetchPromotion",
+    "promotions/fetchPromotions",
     async () => {
         const response = await fetch(baseUrl + "promotions");
         if (!response.ok) {
@@ -20,7 +20,7 @@ export const fetchPromotions = createAsyncThunk(
 const initialState = {
     promotionsArray: [],
     isLoading: true,
-    errMsg:''
+    errMsg: "",
 };
 
 const promotionsSlice = createSlice({
@@ -33,16 +33,15 @@ const promotionsSlice = createSlice({
         },
         [fetchPromotions.fulfilled]: (state, action) => {
             state.isLoading = false;
-            state.errMsg = '';
-            state.partnersArray = mapImageURL(action.payload);
+            state.errMsg = "";
+            state.promotionsArray = mapImageURL(action.payload);
         },
         [fetchPromotions.rejected]: (state, action) => {
             state.isLoading = false;
-            state.errMsg = action.error ? action.error.message : 'Fetch failed';
-        }
-    }
+            state.errMsg = action.error ? action.error.message : "Fetch failed";
+        },
+    },
 });
-
 
 export const promotionsReducer = promotionsSlice.reducer;
 

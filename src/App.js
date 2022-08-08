@@ -21,7 +21,7 @@ function App() {
     useEffect(() => {
         dispatch(fetchCampsites());
         dispatch(fetchPartners());
-        dispatch(fetchPromotions())
+        dispatch(fetchPromotions());
     }, [dispatch]);
 
     return (
